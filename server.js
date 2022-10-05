@@ -11,10 +11,7 @@ app.use(cors({origin:"http://localhost:3001"}))
 const mongodb=require("mongodb")
 const mongoClient=mongodb.MongoClient
 const Razorpay= require('razorpay')
-var instance = new Razorpay({
-   key_id: 'rzp_test_3wbsYuVOk8B881',
-   key_secret: 'wrRtQJZS9m9za31wJ6NGgWZT',
- });
+
  
 
 app.get("/getmovies",cors(),async(req,res)=>{
